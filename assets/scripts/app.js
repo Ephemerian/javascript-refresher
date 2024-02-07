@@ -68,3 +68,25 @@
 
 // const editedHobbies = hobbies.map((item) => ({ text: item }));
 // console.log(editedHobbies);
+
+const userNameData = ["Jacob", "Elordi"]
+const [firstName, lastName] = ["Jacob", "Elordi"]
+console.log("🚀 ~ lastName:", lastName)
+console.log("🚀 ~ firstName:", firstName)
+
+const user = {
+    name: "Jacob"
+    age: 20
+};
+
+const name = user.name;
+const age = user.age;
+
+
+const {name: userName, age: userAge} = {
+    name: "Jacob";
+    age: 20;
+}
+
+console.log(userName);
+console.log(userAge);
