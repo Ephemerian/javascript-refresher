@@ -69,24 +69,65 @@
 // const editedHobbies = hobbies.map((item) => ({ text: item }));
 // console.log(editedHobbies);
 
-const userNameData = ["Jacob", "Elordi"]
-const [firstName, lastName] = ["Jacob", "Elordi"]
-console.log("🚀 ~ lastName:", lastName)
-console.log("🚀 ~ firstName:", firstName)
+// const userNameData = ["Jacob", "Elordi"]
+// const [firstName, lastName] = ["Jacob", "Elordi"]
+// console.log("🚀 ~ lastName:", lastName)
+// console.log("🚀 ~ firstName:", firstName)
 
-const user = {
-    name: "Jacob"
-    age: 20
-};
+// const user = {
+//     name: "Jacob"
+//     age: 20
+// };
 
-const name = user.name;
-const age = user.age;
+// const name = user.name;
+// const age = user.age;
 
 
-const {name: userName, age: userAge} = {
-    name: "Jacob";
-    age: 20;
+// const {name: userName, age: userAge} = {
+//     name: "Jacob";
+//     age: 20;
+// }
+
+// console.log(userName);
+// console.log(userAge);
+
+// const array = [1, 2, 3];
+// const arrayCopy = [...array];
+
+// const object = { a: 1, b: 2 };
+// const objectCopy = { ...object };
+
+// const user = { name: 'Иван', age: 30 };
+// const updatedUser = { ...user, age: 31 };
+
+// console.log(updatedUser); 
+
+// const password = prompt('Your password');
+
+// if (password = "Hello") {
+//     console.log("Hello works");
+// } else if (password === "hello" {
+//     console.log("hello works");
+// } else {
+//     console.log("Access not granted!");
+// }
+// const hobbies = ["Sports", "Cooking"]
+
+// for (const hobby of hobbies) {
+//     console.log (hobby);
+// }
+
+
+function handleTimeout() {
+    console.log("Timed out!");
 }
 
-console.log(userName);
-console.log(userAge);
+const handleTimeout2 = () => {
+    console.log("Timed out.. again!");
+};
+
+setTimeout(handleTimeout, 2000);
+setTimeout(handleTimeout2, 3000);
+setTimeout(() => {
+    console.log("More timing out...");
+}, 4000);
