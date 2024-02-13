@@ -170,3 +170,42 @@
 
 //     return time;
 // }
+
+// function code(t) {
+//     if (t === "") {
+//         return "";
+//     }
+//     var length = t.length;
+//     var n = 0;
+//     while (n * n < length) {
+//         n++;
+//     }
+//     while (t.length < n * n) {
+//         t += '\x0B';
+//     }
+//     var result = "";
+//     for (var col = 0; col < n; col++) {
+//         for (var row = n - 1; row >= 0; row--) {
+//             result += t[row * n + col];
+//         }
+//         if (col < n - 1) {
+//             result += '\n';
+//         }
+//     }
+//     return result;
+// }
+// function decode(s) {
+//     if (s === "") {
+//         return "";
+//     }
+//     var lines = s.split('\n');
+//     var n = lines.length;
+//     var result = "";
+//     for (var col = 0; col < n; col++) {
+//         for (var row = 0; row < n; row++) {
+//             result += lines[row].charAt(n - col - 1);
+//         }
+//     }
+//     result = result.replace(/\x0B/g, '');
+//     return result;
+// }
