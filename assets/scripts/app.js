@@ -209,3 +209,40 @@
 //     result = result.replace(/\x0B/g, '');
 //     return result;
 // }
+
+// function DNAStrand(dna) {
+//     let result = '';
+//     for (i = 0; i < dna.length; i += 1) {
+//         switch (dna[i]) {
+//             case 'A':
+//                 result = result + 'T';
+//                 break;
+//             case 'T':
+//                 result = result + 'A';
+//                 break;
+//             case 'G':
+//                 result = result + 'C';
+//                 break;
+//             case 'C':
+//                 result = result + 'G';
+//                 break;
+//             default:
+//                 return 'Error';
+//         }
+//     }
+//     return result;
+// }
+
+
+// function friend(friends){
+//     let friendList = []
+//     for (let i = 0; i < friends.length; i += 1) {
+//         if (friends[i].length === 4) {
+//             friendList.push(friends[i]);
+//         }
+//     }
+//     return friendList;
+// }
+
+
+// const countSheeps = (arrayOfSheep) => arrayOfSheep.filter(Boolean).length
