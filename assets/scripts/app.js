@@ -246,3 +246,42 @@
 
 
 // const countSheeps = (arrayOfSheep) => arrayOfSheep.filter(Boolean).length
+
+
+// const getNumbers = (numbers, target, result = [], cache = {}) => {
+//   if (cache[target]) return cache[target];
+//   if (!target) return result;
+//   if (target < 0) return [];
+
+//   for (let n of numbers) {
+//     const check = getNumbers(numbers, target - n, [...result, n], cache);
+//     cache[target - n] = check;
+//     if (check.length) return check;
+//   }
+
+//   return [];
+// };
+
+
+// const gcd = (a,b) => b ? gcd(b,a%b) : a ;
+// const replicate = length => x => Array.from( { length }, () => x ) ;
+
+// function getNumbers(ns,target) {
+//   if ( target % ns.reduce(gcd) )
+//     return [];
+//   else
+//     return function go(nns,target) {
+//       if ( target===0 )
+//         return [];
+//       else if ( nns.length===0 )
+//         return null;
+//       else {
+//         for ( let [n,...ns]=nns, i=target/n|0; i>=0; i-- ) {
+//           const r = go( ns, target - i * n );
+//           if ( r )
+//             return [ ...replicate(i)(n), ...r ];
+//         }
+//         return null;
+//       }
+//     } ( ns, target ) || [] ;
+// }
