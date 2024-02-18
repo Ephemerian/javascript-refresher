@@ -303,3 +303,61 @@
 //   }
 //   return sum === m ? n : -1;
 // }
+
+// function solve(game) {
+//   let jump=1, swim=2, wasLastMoveJump=false;
+//   function canSwim(i){
+//     let count=0;
+//     while(game[i] == '~'){
+//       count++;
+//       i++;
+//       if(count>swim)return {res: false};
+//     }
+//     if(count==0)return {res: false};
+//     if(game[i]=='#')return {res: false};
+//     return {res: true, i};
+//   }
+//   function canJump(i){
+//     if(wasLastMoveJump)return {res: false};
+//     if(i+jump>=game.length || ['#','p'].includes(game[i+jump]))return {res: false};
+//     let isP = false;
+//     for(let j=i+1; j<=i+jump; j++){
+//       if(!isP)isP=game[j]=='p';
+//       else{
+//         if(['#','~'].includes(game[j]))return {res: true, isGameOver: true, status: false}
+//       }
+//     }
+//     return {res: true, isGameOver: isP, status: isP};
+//   }
+//   let i=1;
+//   while(i<game.length){
+//     const l = game[i];
+//     if(l=='p')return true;
+//     if(l=='.'){
+//       i++;
+//       wasLastMoveJump=false;
+//       continue;
+//     }
+//     if(['o','j'].includes(l)){
+//       l=='o' ? swim++ : jump++;
+//       i++;
+//       wasLastMoveJump=false;
+//       continue;
+//     }
+//     const currentSwim = canSwim(i);
+//     if(currentSwim.res){
+//       i=currentSwim.i;
+//       wasLastMoveJump=false;
+//       continue;
+//     }
+//     const currentJump = canJump(i);
+//     if(currentJump.res){
+//       if(currentJump.isGameOver)return currentJump.status;
+//       wasLastMoveJump=true;
+//       i+=jump;
+//       continue;
+//     }
+//     return false
+//   }
+//   return true;
+// }
