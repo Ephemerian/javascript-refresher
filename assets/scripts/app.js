@@ -361,3 +361,35 @@
 //   }
 //   return true;
 // }
+
+// function getOptionsCount(target, arr) {
+//   const memo = {};
+
+//   function countWays(target) {
+//     if (memo[target] !== undefined) {
+//       return memo[target];
+//     }
+
+//     if (target === "") {
+//       return 1;
+//     }
+
+//     let count = 0;
+
+//     for (const word of arr) {
+//       if (target.startsWith(word)) {
+//         const remaining = target.slice(word.length);
+//         count += countWays(remaining);
+//       }
+//     }
+
+//     memo[target] = count;
+//     return count;
+//   }
+
+//   return countWays(target);
+// }
+
+// // Sample usage:
+// const result = getOptionsCount("example", ["exa", "exam", "ple"]);
+// console.log(result); // Output: 1
