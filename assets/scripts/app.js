@@ -393,3 +393,19 @@
 // // Sample usage:
 // const result = getOptionsCount("example", ["exa", "exam", "ple"]);
 // console.log(result); // Output: 1
+
+// function weird(n) {
+
+//   if (n === 1n) return 1n;
+//   if (n % 2n === 0n) return n/2n + 1n;
+  
+//   n = Number(n);
+  
+//   for (let divisor=4; ; divisor*=2) {
+//     const addent = (divisor/2) + 1;
+//     const val = (n+addent)/divisor;
+//     if (Number.isInteger(val)) {
+//       return BigInt(val);
+//     }
+//   }
+// }
