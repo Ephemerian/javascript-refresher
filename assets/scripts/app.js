@@ -409,3 +409,62 @@
 //     }
 //   }
 // }
+
+// function encodeResistorColors(ohmsString) {
+//     let value = ohmsString.replace(" ohms", "");
+//     value = value.replace(".", "");
+//     value = value.replace("k", "000");
+//     value = value.replace("M", "000000");
+//     let values = [];
+//     let coef = ""
+//     for (let i = 0; i < value.length; i++){
+//       if(i<=1){
+//         values.push(parseInt(value[i], 10));
+//       } else {
+//         coef = coef + value[i];
+//       }
+//     }
+//     if(ohmsString[1] === "."){
+//       values.push(coef.length - 1);
+//     } else {
+//       values.push(coef.length);
+//     }
+//     let code = "";
+//     for (let i = 0; i < values.length; i++){
+//       switch(values[i]){
+//           case 0:
+//           code = code + "black "
+//           break;
+//         case 1:
+//           code = code + "brown "
+//           break;
+//         case 2:
+//           code = code + "red "
+//           break;
+//         case 3:
+//           code = code + "orange "
+//           break;
+//         case 4:
+//           code = code + "yellow "
+//           break;
+//         case 5:
+//           code = code + "green "
+//           break;
+//         case 6:
+//           code = code + "blue "
+//           break;
+//         case 7:
+//           code = code + "violet "
+//           break;
+//         case 8:
+//           code = code + "gray "
+//           break;
+//         case 9:
+//           code = code + "white "
+//           break;
+//       } 
+//     }
+//     code = code + "gold";
+//     console.log(ohmsString + " => " + values + " => " + code);
+//     return(code);
+// }
